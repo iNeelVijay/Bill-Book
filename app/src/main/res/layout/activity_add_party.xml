@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainView_party"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".AddPartyActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:id="@+id/tl_addParty"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bacward_ic"
+            app:tint="@color/white"
+            android:id="@+id/backBtn_addParty"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new party"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_addParty"
+        >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textSize="18sp"
+               android:textStyle="bold"
+               android:text="Enter the party details to add"
+               android:gravity="center"
+               android:layout_marginTop="10dp"
+               />
+
+           <com.airbnb.lottie.LottieAnimationView
+               android:layout_width="120dp"
+               android:layout_height="120dp"
+               app:lottie_rawRes="@raw/addparty_anim"
+               app:lottie_colorFilter="@color/colorPrimaryDark"
+               app:lottie_autoPlay="true"
+               android:layout_gravity="center"
+               />
+
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textSize="16sp"
+               android:textStyle="normal"
+               android:layout_marginLeft="15dp"
+               android:text="Party name"
+               android:layout_marginTop="20dp"
+               />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:background="@drawable/roundedittext"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:drawableLeft="@drawable/parties_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:drawablePadding="4dp"
+               android:textColor="@color/black"
+               android:hint="Enter name here"
+               android:textColorHint="#A9A9A9"
+               android:padding="10dp"
+               android:id="@+id/name_addParty"
+               />
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/line_ic"
+               android:layout_marginTop="6dp"
+               app:tint="@color/colorPrimaryDark"
+               android:scaleType="fitXY"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textSize="16sp"
+               android:textStyle="normal"
+               android:layout_marginLeft="15dp"
+               android:text="Contact number"
+               android:layout_marginTop="10dp"
+               />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:background="@drawable/roundedittext"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:hint="Contact number"
+               android:maxLength="10"
+               android:drawableLeft="@drawable/contact_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:drawablePadding="4dp"
+               android:inputType="number"
+               android:textColor="@color/black"
+               android:textColorHint="#A9A9A9"
+               android:padding="10dp"
+               android:id="@+id/contactNumber_addParty"
+               />
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/line_ic"
+               android:layout_marginTop="6dp"
+               app:tint="@color/colorPrimaryDark"
+               android:scaleType="fitXY"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textSize="16sp"
+               android:textStyle="normal"
+               android:layout_marginLeft="15dp"
+               android:text="GST number"
+               android:layout_marginTop="10dp"
+               />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:background="@drawable/roundedittext"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:hint="Enter GST here"
+               android:maxLength="15"
+               android:inputType="text"
+               android:drawableLeft="@drawable/gst_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:drawablePadding="4dp"
+               android:textColor="@color/black"
+               android:textColorHint="#A9A9A9"
+               android:padding="10dp"
+               android:id="@+id/gst_addParty"
+               />
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/line_ic"
+               android:layout_marginTop="6dp"
+               app:tint="@color/colorPrimaryDark"
+               android:scaleType="fitXY"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textSize="16sp"
+               android:textStyle="normal"
+               android:layout_marginLeft="15dp"
+               android:text="Email id"
+               android:layout_marginTop="10dp"
+               />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:background="@drawable/roundedittext"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:hint="Enter email here"
+               android:inputType="textEmailAddress"
+               android:textColor="@color/black"
+               android:textColorHint="#A9A9A9"
+               android:drawableLeft="@drawable/mail_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:drawablePadding="4dp"
+               android:padding="10dp"
+               android:id="@+id/email_addParty"
+               />
+
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/line_ic"
+               android:layout_marginTop="6dp"
+               app:tint="@color/colorPrimaryDark"
+               android:scaleType="fitXY"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textSize="16sp"
+               android:textStyle="normal"
+               android:layout_marginLeft="15dp"
+               android:text="Billing Adress"
+               android:layout_marginTop="10dp"
+               />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="75dp"
+               android:background="@drawable/roundedittext"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:hint="Enter adress here"
+               android:drawableLeft="@drawable/adress_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:drawablePadding="4dp"
+               android:inputType="text"
+               android:textColor="@color/black"
+               android:textColorHint="#A9A9A9"
+               android:padding="10dp"
+               android:id="@+id/adress_addParty"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:background="@drawable/buttons"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginBottom="10dp"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:textSize="22sp"
+               android:text="Add Party"
+               android:gravity="center"
+               android:id="@+id/addBtn_addParty"
+               />
+
+
+
+
+       </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

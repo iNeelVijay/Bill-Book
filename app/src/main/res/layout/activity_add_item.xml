@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainview_addItem"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/colorPrimaryDark"
+               android:orientation="horizontal"
+               android:padding="12dp"
+               >
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:src="@drawable/bacward_ic"
+                   app:tint="@color/white"
+                   android:id="@+id/backBtn_addItem"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Add new Item"
+                   android:textSize="22sp"
+                   android:textColor="@color/white"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_marginLeft="10dp"
+                   />
+
+
+           </LinearLayout>
+
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textStyle="bold"
+               android:textSize="17sp"
+               android:text="Item name"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="20dp"
+               />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:background="@drawable/roundedittext"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:hint="Enter item name here"
+               android:inputType="text"
+               android:textColor="@color/black"
+               android:textColorHint="#A9A9A9"
+               android:padding="10dp"
+               android:id="@+id/itemName_addItem"
+               />
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/line_ic"
+               android:scaleType="fitXY"
+               android:layout_marginTop="20dp"
+               app:tint="@color/colorPrimaryDark"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textStyle="bold"
+               android:textSize="17sp"
+               android:text="Item unit"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="10dp"
+               />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:background="@drawable/roundedittext"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:textColor="@color/black"
+               android:hint="Enter unit here"
+               android:maxLength="10"
+               android:inputType="text"
+               android:textColorHint="#A9A9A9"
+               android:padding="10dp"
+               android:id="@+id/itemUnit_addItem"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="12sp"
+               android:text="Mention the unit for the item sale(in kgs, gms, pc. etc)"
+               android:textColor="@color/colorPrimaryDark"
+               android:gravity="center"
+               />
+
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/line_ic"
+               android:scaleType="fitXY"
+               android:layout_marginTop="20dp"
+               app:tint="@color/colorPrimaryDark"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textStyle="bold"
+               android:textSize="17sp"
+               android:text="Item price"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="10dp"
+               />
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:background="@drawable/roundedittext"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:textColor="@color/black"
+               android:hint="Enter price here(in Rs.)"
+               android:maxLength="10"
+               android:inputType="numberDecimal"
+               android:textColorHint="#A9A9A9"
+               android:padding="10dp"
+               android:id="@+id/itemPrice_addItem"
+               />
+
+
+
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/line_ic"
+               android:scaleType="fitXY"
+               android:layout_marginTop="20dp"
+               app:tint="@color/colorPrimaryDark"
+               />
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorPrimaryDark"
+               android:textStyle="bold"
+               android:textSize="17sp"
+               android:text="Tax"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="10dp"
+               />
+
+           <RadioGroup
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:id="@+id/radGrp_addItem"
+               >
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:text="Inclusive Tax"
+                   android:id="@+id/inclusiveradBtn_addItem"
+                   />
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:layout_marginLeft="50dp"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:text="Exclusive Tax"
+                   android:id="@+id/exclusiveradBtn_addItem"
+                   />
+           </RadioGroup>
+
+
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="50dp"
+               android:layout_marginRight="50dp"
+               android:src="@drawable/line_ic"
+               app:tint="@color/colorPrimaryDark"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Enter the tax percentage"
+               android:textColor="@color/colorPrimaryDark"
+               android:layout_marginTop="10dp"
+               android:layout_gravity="center"
+               />
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_gravity="center"
+               >
+               <EditText
+                   android:layout_width="100dp"
+                   android:layout_height="45dp"
+                   android:background="@drawable/roundedittext"
+                   android:padding="10dp"
+                   android:inputType="numberDecimal"
+                   android:maxLength="5"
+                   android:textColorHint="#A9A9A9"
+                   android:hint="0.00"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   android:id="@+id/taxPercent_addItem"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="bold"
+                   android:text="%"
+                   android:layout_marginLeft="5dp"
+                   android:textSize="22sp"
+                   />
+           </LinearLayout>
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="55dp"
+               android:textSize="22sp"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:text="SAVE"
+               android:layout_marginLeft="20dp"
+               android:layout_marginRight="20dp"
+               android:background="@drawable/buttons"
+               android:gravity="center"
+               android:layout_marginTop="50dp"
+               android:id="@+id/saveBtn_addItem"
+               android:layout_marginBottom="20dp"
+               />
+
+
+
+
+       </LinearLayout>
+
+
+   </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

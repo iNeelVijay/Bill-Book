@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".PartySelectionActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/searchBar"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:padding="8dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:hint="Search party name here"
+            android:textColorHint="#A9A9A9"
+            android:drawableLeft="@drawable/serach_ic"
+            android:drawableTint="@color/black"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:id="@+id/searchBar_selectParty"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_selectParty"
+        android:layout_below="@id/searchBar"
+        />
+
+</RelativeLayout>

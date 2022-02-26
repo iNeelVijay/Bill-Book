@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".BillActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/top_curve_design"
+        >
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/bacward_ic"
+    app:tint="@color/white"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:id="@+id/backBtn_bills"
+    />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="My Bills    "
+            android:gravity="center_horizontal"
+            android:textSize="22sp"
+            android:layout_marginTop="9.5dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/title_bills"
+            />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="80dp"
+        android:elevation="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/cardForSearch_bills"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableLeft="@drawable/serach_ic"
+                android:background="@color/colorWhite"
+                android:drawableTint="#000000"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:hint="Enter bill id to search"
+                android:textColorHint="#A9A9A9"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:id="@+id/searchEditTxt_bills"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Your list is currently Empty"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_marginTop="9.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/cardForSearch_bills"
+        android:visibility="gone"
+        android:id="@+id/emptyMsg_bills"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cardForSearch_bills"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerView_bills"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

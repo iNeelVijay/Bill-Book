@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/colorPrimaryDark"
+               android:padding="20dp"
+               android:elevation="20dp"
+               android:id="@+id/headerRelativeLayout_settings"
+               >
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   app:cardCornerRadius="15dp"
+                   android:id="@+id/cardforImage"
+                   >
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:background="@color/white"
+                       >
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:src="@drawable/addimage_ic"
+                           android:padding="15dp"
+                           android:id="@+id/logo_settings"
+                           />
+                   </RelativeLayout>
+               </androidx.cardview.widget.CardView>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/cardforImage"
+                   android:orientation="vertical"
+                   android:layout_marginTop="10dp"
+                   >
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textStyle="bold"
+                       android:textColor="@color/white"
+                       android:textSize="25sp"
+                       android:layout_marginLeft="10dp"
+                       android:text="Business name"
+                       android:maxLines="1"
+                       android:gravity="center"
+                       android:id="@+id/businessName_settings"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textStyle="bold"
+                       android:textColor="@color/white"
+                       android:textSize="16sp"
+                       android:layout_marginTop="10dp"
+                       android:text="Contact Number"
+                       android:layout_gravity="center"
+                       android:maxLines="1"
+                       android:gravity="center"
+                       android:drawableLeft="@drawable/contact_ic"
+                       android:drawablePadding="5dp"
+                       android:drawableTint="@color/white"
+                       android:id="@+id/contactNumber_settings"
+                       />
+
+               </LinearLayout>
+
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"
+                   android:scaleType="fitXY"
+                   android:src="@drawable/line_ic"
+                   android:layout_marginTop="10dp"
+                   app:tint="@color/white"
+                   android:layout_below="@id/cardforImage"
+                   android:id="@+id/line_here"
+                   />
+
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:drawableLeft="@drawable/edit_ic"
+                   android:drawableTint="@color/white"
+                   android:textSize="17sp"
+                   android:textStyle="bold"
+                   android:textColor="@color/white"
+                   android:text="Add Details"
+                   android:layout_below="@id/line_here"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginTop="20dp"
+                   android:drawablePadding="4dp"
+                   android:id="@+id/addDetails_settings"
+                   />
+           </RelativeLayout>
+
+
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:text="My Stuffs"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="10dp"
+               android:textSize="18sp"
+               />
+
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="15sp"
+                   android:text="My Bills"
+                   android:background="@color/white"
+                   android:drawableLeft="@drawable/items_ic"
+                   android:drawableTint="@color/colorPrimaryDark"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="20dp"
+                   android:drawableRight="@drawable/forward_ic"
+                   android:drawablePadding="5dp"
+                   android:gravity="center_vertical"
+                   android:id="@+id/myBills_settings"
+                   />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="15sp"
+               android:text="My Quotations"
+               android:background="@color/white"
+               android:drawableLeft="@drawable/items_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="8dp"
+               android:drawableRight="@drawable/forward_ic"
+               android:drawablePadding="5dp"
+               android:gravity="center_vertical"
+               android:id="@+id/myQuotations_settings"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="15sp"
+               android:text="My Daily Expenses"
+               android:background="@color/white"
+               android:drawableLeft="@drawable/items_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="8dp"
+               android:drawableRight="@drawable/forward_ic"
+               android:drawablePadding="5dp"
+               android:gravity="center_vertical"
+               android:id="@+id/dailyExpenses_settings"
+               />
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/line_ic"
+               app:tint="@color/colorPrimaryDark"
+               android:layout_marginTop="10dp"
+               />
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:text="App Menu"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="30dp"
+               android:textSize="18sp"
+               />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="15sp"
+               android:text="About Us"
+               android:background="@color/white"
+               android:drawableLeft="@drawable/about_us_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="20dp"
+               android:drawableRight="@drawable/forward_ic"
+               android:drawablePadding="5dp"
+               android:gravity="center_vertical"
+               android:id="@+id/aboutUs_settings"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="15sp"
+               android:text="Contact Us"
+               android:background="@color/white"
+               android:drawableLeft="@drawable/contact_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="8dp"
+               android:drawableRight="@drawable/forward_ic"
+               android:drawablePadding="5dp"
+               android:gravity="center_vertical"
+               android:id="@+id/contactUs_settings"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="15sp"
+               android:text="Rate Us"
+               android:background="@color/white"
+               android:drawableLeft="@drawable/playstore_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="8dp"
+               android:drawableRight="@drawable/forward_ic"
+               android:drawablePadding="5dp"
+               android:gravity="center_vertical"
+               android:id="@+id/rateUs_settings"
+               />
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/line_ic"
+               app:tint="@color/colorPrimaryDark"
+               android:layout_marginTop="10dp"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:text="Logout"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="45dp"
+               android:textSize="18sp"
+
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:textSize="15sp"
+               android:text="Logout"
+               android:background="@color/white"
+               android:drawableLeft="@drawable/logout_ic"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:layout_marginLeft="10dp"
+               android:layout_marginTop="20dp"
+               android:drawableRight="@drawable/forward_ic"
+               android:drawablePadding="5dp"
+               android:gravity="center_vertical"
+               android:id="@+id/logout_settings"
+               />
+
+
+
+
+
+
+
+       </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

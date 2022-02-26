@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "282846133861",
+    "project_id": "my-billink-book",
+    "storage_bucket": "my-billink-book.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282846133861:android:9033220f34ce5e485b908c",
+        "android_client_info": {
+          "package_name": "com.example.mybillingbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282846133861-q10edllkvncl0bb1em5ptc632frttd1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mybillingbook",
+            "certificate_hash": "043dc82379bbc155d8cdc7f364fd47a58e708b1b"
+          }
+        },
+        {
+          "client_id": "282846133861-upsb1vnpj477o71sdav2hh87d49dphb5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9G_ru-cIriHCGz1SxOlGduheGeQk8R6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282846133861-upsb1vnpj477o71sdav2hh87d49dphb5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

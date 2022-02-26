@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainView_ud"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".UserDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_curve_design"
+        android:id="@+id/toolbar_userdetails"
+        >
+        
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/bacward_ic"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/backBtn_ud"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="My Details"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_userdetails"
+        >
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="My Logo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:elevation="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/addimage_ic"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/logo_ud"
+                        />
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/addimage_ic"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="Add your logo in the frame"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                />
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                app:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Buisness name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/roundedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/buisinessname_ic"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Your buisiness name here"
+                android:textColorHint="#A9A9A9"
+                android:maxLines="1"
+                android:id="@+id/buisinessname_ud"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                app:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Contact number"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/roundedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/contact_ic"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Buisiness contact number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColorHint="#A9A9A9"
+                android:maxLines="1"
+                android:id="@+id/contactNumber_ud"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                app:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="GST number(Optional)"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/roundedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/gst_ic"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Buisiness GST number"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textColorHint="#A9A9A9"
+                android:maxLines="1"
+                android:id="@+id/gst_ud"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                app:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Email"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/roundedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/mail_ic"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Buisiness email id"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#A9A9A9"
+                android:maxLines="1"
+                android:id="@+id/email_ud"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                app:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Office Adress"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@drawable/roundedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/adress_ic"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Office adress here"
+                android:inputType="text"
+                android:textColorHint="#A9A9A9"
+                android:id="@+id/adress_ud"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                app:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="City"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/roundedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/adress_ic"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Your city here"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textColorHint="#A9A9A9"
+                android:maxLines="1"
+                android:id="@+id/city_ud"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                app:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="PIN Code"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/roundedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/adress_ic"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="Your PIN here"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColorHint="#A9A9A9"
+                android:maxLines="1"
+                android:id="@+id/pin_ud"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                app:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="State"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/roundedittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/adress_ic"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:drawablePadding="5dp"
+                android:padding="8dp"
+                android:hint="State here"
+                android:inputType="text"
+                android:maxLength="6"
+                android:textColorHint="#A9A9A9"
+                android:maxLines="1"
+                android:id="@+id/state_ud"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="fitXY"
+                app:tint="@color/colorPrimaryDark"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/buttons"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:text="UPDATE"
+                android:id="@+id/updateBtn_ud"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+</RelativeLayout>

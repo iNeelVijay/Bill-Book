@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GST:"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXXXXXXXXXXXXXXXX"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/gst_partyItem"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_ic"
+            app:tint="@color/black"
+            android:scaleType="fitXY"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Party Name"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/parties_ic"
+            android:drawableTint="@color/black"
+            android:drawablePadding="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/name_partyItem"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XXXXXXXXXX"
+            android:layout_marginLeft="5dp"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/contact_ic"
+            android:drawableTint="@color/black"
+            android:drawablePadding="4dp"
+            android:textColor="@color/black"
+            android:id="@+id/contact_partyItem"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="example@gmail.com"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/mail_ic"
+            android:drawableTint="#A9A9A9"
+            android:drawablePadding="4dp"
+            android:textColor="#A9A9A9"
+            android:id="@+id/email_partyItem"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line_ic"
+            app:tint="@color/black"
+            android:scaleType="fitXY"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:text="Adress"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/location_ic"
+            android:drawableTint="@color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="example@gmail.com"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:drawablePadding="4dp"
+            android:textColor="#A9A9A9"
+            android:id="@+id/adress_partyItem"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/delete_ic"
+        app:tint="@color/black"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/deleteBtn_partyItem"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/edit_ic"
+        app:tint="@color/black"
+        android:layout_gravity="right"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/editBtn_partyItem"
+        />
+
+
+</androidx.cardview.widget.CardView>

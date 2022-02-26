@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".DailyExpenseActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/bacward_ic"
+                    app:tint="@color/white"
+                    android:id="@+id/backBtn_dailyExpense"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Daily Expenses"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="bold"
+                   android:textSize="16sp"
+                   android:text="Today's Date: "
+                   android:layout_marginLeft="10dp"
+                   />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:gravity="right"
+                    android:text="XX/YY/ZZZZ"
+                    android:id="@+id/date_dailyExpense"
+                    android:layout_marginRight="10dp"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                app:tint="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                app:tint="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:text="You have already added your today's Expense!!"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:visibility="gone"
+                android:id="@+id/alreadyDone_msg"
+                />
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layoutToAddExpense_dailyExpense"
+                android:layout_marginTop="15dp"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:text="Total Incoming Amount"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/roundedittext"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="#A9A9A9"
+                    android:hint="Incoming Amount"
+                    android:gravity="center"
+                    android:maxLength="7"
+                    android:drawableLeft="@drawable/money_ic"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/incomingAmount_dailyExpense"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:text="Total Outgoing Amount"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/roundedittext"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/money_ic"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="#A9A9A9"
+                    android:hint="Outgoing Amount"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:inputType="numberDecimal"
+                    android:maxLength="7"
+                    android:id="@+id/outgoingAmount_dailyExpense"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/buttons"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:text="Update Expense"
+                    android:gravity="center"
+                    android:id="@+id/updateBtnBtn_dailyExpense"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                app:tint="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="2dp"
+                app:tint="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp"
+                android:text="Get Daily Expense"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginBottom="2dp"
+                app:tint="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/radGrp_dailyExpense"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:text="Last 7 days"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/sevendays_dailyExpense"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:text="Last 30 days"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/thirtydays_dailyExpense"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:text="Last 6 months"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/sixmonths_dailyExpense"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:text="All"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/all_dailyExpense"
+                    />
+
+
+
+
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/buttons"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Get Expense List"
+                android:gravity="center"
+                android:id="@+id/getList_dailyExpense"
+                />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="2dp"
+                app:tint="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_ic"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                app:tint="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ExpenseViewerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/scroll_expViewer"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+
+
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:elevation="5dp"
+                   android:id="@+id/headerForDailyExpense"
+                   >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:background="@color/colorPrimaryDark"
+                       >
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/white"
+                           android:textSize="15sp"
+                           android:textStyle="bold"
+                           android:text="Daily Expense Record"
+                           android:gravity="center"
+                           android:padding="2dp"
+                           />
+
+                       <ImageView
+                           android:layout_width="80dp"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/line_ic"
+                           app:tint="@color/white"
+                           android:layout_gravity="center"
+                           />
+
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal"
+                           android:padding="5dp"
+                           android:layout_marginTop="2dp"
+                           >
+                           <ImageView
+                               android:layout_width="120dp"
+                               android:layout_height="120dp"
+                               android:src="@drawable/addimage_ic"
+                               android:id="@+id/logo_dailyExpense"
+                               />
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:orientation="vertical"
+                               android:gravity="center"
+                               >
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:textSize="22sp"
+                                   android:textColor="@color/white"
+                                   android:textStyle="bold"
+                                   android:text="Buisiness Name"
+                                   android:maxLines="1"
+                                   android:gravity="center"
+                                   android:id="@+id/buisinessName_dailyExpense"
+                                   />
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:textSize="12sp"
+                                   android:textColor="@color/white"
+                                   android:textStyle="normal"
+                                   android:drawableTint="@color/white"
+                                   android:drawableLeft="@drawable/mail_ic"
+                                   android:text="business@gmail.com"
+                                   android:maxLines="1"
+                                   android:gravity="center"
+                                   android:id="@+id/businessEmail_dailyExpense"
+                                   />
+
+
+
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:textSize="12sp"
+                                   android:textColor="@color/white"
+                                   android:textStyle="normal"
+                                   android:layout_marginTop="10dp"
+                                   android:drawableTint="@color/white"
+                                   android:drawableLeft="@drawable/location_ic"
+                                   android:text="Example Adress"
+                                   android:maxLines="2"
+                                   android:gravity="center"
+                                   android:drawablePadding="3dp"
+                                   android:id="@+id/businessAdress_dailyExpense"
+                                   />
+
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+
+                   </LinearLayout>
+               </androidx.cardview.widget.CardView>
+
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/line_ic"
+                   android:layout_marginTop="4dp"
+                   android:scaleType="fitXY"
+                   app:tint="@color/black"
+                   />
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/line_ic"
+                   android:layout_marginTop="4dp"
+                   android:scaleType="fitXY"
+                   app:tint="@color/black"
+                   />
+
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:padding="3dp"
+                   android:textSize="14sp"
+                   android:gravity="center"
+                   android:drawablePadding="3dp"
+                   android:drawableLeft="@drawable/money_ic"
+                   android:drawableTint="@color/black"
+                   android:text="Expense Record Last Seven Days"
+                   android:layout_gravity="center"
+                   android:id="@+id/days_dailyExpense"
+                   />
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/line_ic"
+                   android:layout_marginTop="4dp"
+                   android:scaleType="fitXY"
+                   app:tint="@color/black"
+                   />
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/line_ic"
+                   android:layout_marginTop="4dp"
+                   android:scaleType="fitXY"
+                   app:tint="@color/black"
+                   />
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="10dp"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:text="Date"
+                       android:textStyle="bold"
+                       android:layout_marginLeft="10dp"
+                       android:layout_gravity="left"
+                       android:layout_weight="1"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:text="Incoming Amount"
+                       android:textStyle="bold"
+                       android:gravity="right"
+                       android:layout_marginLeft="70dp"
+                       android:layout_gravity="center"
+                       android:layout_weight="2"
+                       />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:gravity="right"
+                       android:text="Outgoing Amount"
+                       android:textStyle="bold"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginLeft="30dp"
+                       android:layout_gravity="center"
+                       android:layout_weight="3"
+
+                       />
+
+
+               </LinearLayout>
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/line_ic"
+                   android:layout_marginTop="4dp"
+                   android:scaleType="fitXY"
+                   app:tint="@color/black"
+                   />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_expenseViewer"
+                />
+
+
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/line_ic"
+                   app:tint="@color/black"
+                   android:layout_marginTop="4dp"
+                   android:scaleType="fitXY"
+                   />
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/line_ic"
+                   app:tint="@color/black"
+                   android:layout_marginTop="2dp"
+                   android:scaleType="fitXY"
+                   />
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="16sp"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="bold"
+                   android:text="Buisiness Name"
+                   android:maxLines="1"
+                   android:gravity="center"
+                   android:layout_marginTop="10dp"
+                   android:id="@+id/buisname_expfooter"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="8sp"
+                   android:drawableTint="@color/black"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="normal"
+                   android:text="Buisiness Adress"
+                   android:maxLines="3"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="0dp"
+                   android:id="@+id/adress_expfooter"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="8sp"
+                   android:drawableTint="@color/black"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="normal"
+                   android:text="Buisiness GST"
+                   android:maxLines="1"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:id="@+id/gst_expfooter"
+                   />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="8sp"
+                   android:drawableTint="@color/black"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textStyle="normal"
+                   android:text="exaple@gmail.com, +91 XXXXXXXXXX"
+                   android:maxLines="1"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:id="@+id/contact_expfooter"
+                   />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/save_ic"
+        app:tint="@color/white"
+        android:id="@+id/savebtn_expviewer"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

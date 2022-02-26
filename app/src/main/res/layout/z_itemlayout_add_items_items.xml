@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/items_ic"
+        android:drawableTint="@color/black"
+        android:drawablePadding="4dp"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:text="Name"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:id="@+id/name_Item"
+        />
+
+</androidx.cardview.widget.CardView>

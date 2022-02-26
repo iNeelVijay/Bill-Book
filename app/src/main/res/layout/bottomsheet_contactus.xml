@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Ecrrede Billing App"
+            android:fontFamily="cursive"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Send your query/problem to us.\nOur team will get in touch with you as soon as possible."
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/parties_ic"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:background="@drawable/roundedittext"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="#A9A9A9"
+            android:hint="Enter your name here"
+            android:drawablePadding="5dp"
+            android:id="@+id/name_contactUs"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:background="@drawable/roundedittext"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="#A9A9A9"
+            android:hint="Describe your query/problem"
+            android:drawablePadding="5dp"
+            android:id="@+id/main_contactUs"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/contact_ic"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:background="@drawable/roundedittext"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="#A9A9A9"
+            android:maxLength="10"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:hint="Enter your contact number here"
+            android:drawablePadding="5dp"
+            android:id="@+id/contact_contactUs"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/buttons"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="SEND"
+            android:gravity="center"
+            android:id="@+id/send_contactUs"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
